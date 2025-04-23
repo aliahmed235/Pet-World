@@ -1,0 +1,94 @@
+[
+    {
+        "name": "Leather Collar",
+        "category": "collar",
+        "price": 19.99,
+        "description": "A stylish leather collar for your pet.",
+        "image": "photo/leather-collars.jpg"
+    },
+    {
+        "name": "Chew Toy",
+        "category": "toy",
+        "price": 5.99,
+        "description": "A durable chew toy for dogs.",
+        "image": "photo/chew-toy.jpeg"
+    },
+    {
+        "name": "Cat Bed",
+        "category": "furniture",
+        "price": 29.99,
+        "description": "A soft and cozy bed for your feline friend.",
+        "image": "photo/cat-bed.jpeg"
+    },
+    {
+        "name": "Pet Harness",
+        "category": "collar",
+        "price": 15.99,
+        "description": "Comfortable and adjustable harness for your dog or cat.",
+        "image": "photo/pet harrnes.jpeg"
+    },
+    {
+        "name": "Dog Leash",
+        "category": "collar",
+        "price": 12.99,
+        "description": "A sturdy leash for walking your dog.",
+        "image": "photo/Dog Leash.jpeg"
+    },
+    {
+        "name": "Interactive Cat Toy",
+        "category": "toy",
+        "price": 10.99,
+        "description": "A fun, interactive toy to keep your cat entertained.",
+        "image": "photo/interactive cat toys.jpeg"
+    },
+    {
+        "name": "Pet Shampoo",
+        "category": "grooming",
+        "price": 9.99,
+        "description": "Gentle shampoo for your pet’s delicate skin.",
+        "image": "photo/pet-shampoo.jpeg"
+    },
+    {
+        "name": "Nail Clippers",
+        "category": "grooming",
+        "price": 7.99,
+        "description": "Nail clippers designed for pets to keep their paws neat.",
+        "image": "photo/nail-clipper.jpeg"
+    },
+    {
+        "name": "Pet Carrier",
+        "category": "travel",
+        "price": 39.99,
+        "description": "A comfortable carrier for your pet during travel.",
+        "image": "photo/pet carrier.jpeg"
+    },
+    {
+        "name": "Cooling Mat",
+        "category": "furniture",
+        "price": 24.99,
+        "description": "A cooling mat that helps regulate your pet's temperature in the heat.",
+        "image": "photo/cooling-mat.jpeg"
+    }
+    ,
+    {
+        "name": "Travel Water Bottle",
+        "category": "feeding",
+        "price": 13.99,
+        "description": "A portable water bottle for pets while on the go.",
+        "image": "photo/travel water bottle.jpeg"
+    },
+    {
+        "name": "Pet Food Bowl",
+        "category": "feeding",
+        "price": 8.99,
+        "description": "A stainless steel bowl for food or water.",
+        "image": "photo/pet food bowl.jpeg"
+    },
+    {
+        "name": "Pet Blanket",
+        "category": "furniture",
+        "price": 14.99,
+        "description": "A soft and comfortable blanket for your pet’s comfort.",
+        "image": "photo/pet-blanket.jpeg"
+    }
+]

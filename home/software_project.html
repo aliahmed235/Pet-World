@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link rel="stylesheet" href="software_project.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/sign-in.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo"><img src="/photo/edit.JPG" alt="Paws & Claws Logo"></a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/home/software_project.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/adoption page/Adoption page.html" class="nav-link">Adoption</a></li>
+                <li class="nav-item"><a href="/clinic/clinic.html" class="nav-link">Clinics</a></li>
+                <li class="nav-item"><a href="/buy and sell/buy.html" class="nav-link">Buy</a></li>
+                <li class="nav-item"><a href="/buy and sell/sell.html" class="nav-link">Sell</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="javascript:void(0);" id="signInBtn" class="primary-btn">Sign In &rarr;</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sign-In Modal -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Sign In</h2>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button id="loginButton">Log In</button>
+            <p id="error" class="error-message">Invalid email or password</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Pets World</h1>
+                <p>Your one-stop destination for adopting and caring for pets.</p>
+                <a href="#adopt" class="btn btn-primary">Find a Pet</a>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p class="container-text">We connect loving families with pets in need of a home. Whether you're looking to adopt or get expert pet care advice, we're here to help!</p>
+            </div>
+        </section>
+
+        <!-- Adoption Section -->
+        <section id="adopt" class="adopt">
+            <div class="container">
+                <h2>Meet Our Pets</h2>
+                <div class="pet-grid">
+                    <div class="pet-card">
+                        <img src="/home/photo/dog.jpg" alt="Cute Dog">
+                        <h3>Buddy</h3>
+                        <p>2-year-old Labrador. Friendly and playful.</p>
+                        <a href="#" class="btn btn-secondary">Adopt Me</a>
+                    </div>
+                    <div class="pet-card">
+                        <img src="photo/cat.jpg" alt="Adorable Cat">
+                        <h3>Mittens</h3>
+                        <p>1-year-old Tabby. Calm and cuddly.</p>
+                        <a href="#" class="btn btn-secondary">Adopt Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>Clients' Comments</h2>
+                <div class="testimonial">
+                    <p>"Adopting Max was the best decision we ever made! He's brought so much joy into our lives." - Sarah K.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"This platform made finding my new furry friend so easy. Highly recommend!" - John D.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pets World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="software_project.js"></script>
+    <script src="/sign-in.js"></script>
+</body>
+</html>

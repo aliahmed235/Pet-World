@@ -1,0 +1,135 @@
+[
+    {
+        "name": "Bella",
+        "age": 3,
+        "category": "dog",
+        "image": "/photo/dog.jpg",
+        "description": "A playful dog in need of a loving home."
+    },
+    {
+        "name": "Max",
+        "age": 5,
+        "category": "dog",
+        "image": "/photo/dog2.jpg",
+        "description": "Loves to play fetch and needs lots of exercise."
+    },
+    {
+        "name": "Whiskers",
+        "age": 2,
+        "category": "cat",
+        "image": "/photo/cat.jpg",
+        "description": "A calm and loving cat who enjoys being around people."
+    },
+    {
+        "name": "Mittens",
+        "age": 1,
+        "category": "cat",
+        "image": "/photo/cat2.jpg",
+        "description": "Playful and curious, loves to explore."
+    },
+    {
+        "name": "Charlie",
+        "age": 4,
+        "category": "dog",
+        "image": "/photo/dog 5.jpg",
+        "description": "Loyal and protective, great with families."
+    },
+    {
+        "name": "Daisy",
+        "age": 2,
+        "category": "dog",
+        "image": "/photo/dog 4.jpg",
+        "description": "A sweet dog who loves cuddling."
+    },
+    {
+        "name": "Luna",
+        "age": 3,
+        "category": "cat",
+        "image": "/photo/cat 3.jpg",
+        "description": "An independent cat who loves lounging by the window."
+    },
+    {
+        "name": "Simba",
+        "age": 1,
+        "category": "cat",
+        "image": "/photo/cat4.jpg",
+        "description": "A curious kitten who loves exploring new places."
+    },
+    {
+        "name": "Rex",
+        "age": 6,
+        "category": "dog",
+        "image": "/photo/dog 3.jpg",
+        "description": "A well-trained dog with a gentle temperament."
+    },
+    {
+        "name": "Socks",
+        "age": 4,
+        "category": "cat",
+        "image": "photo/cat5.jpg",
+        "description": "A playful cat who loves chasing toys."
+    },
+    {
+        "name": "Toby",
+        "age": 2,
+        "category": "dog",
+        "image": "/photo/dog 6.jpg",
+        "description": "Friendly and energetic, loves outdoor adventures."
+    },
+    {
+        "name": "Shadow",
+        "age": 5,
+        "category": "cat",
+        "image": "/photo/cat6.jpg",
+        "description": "A shy yet affectionate cat who enjoys being petted."
+    },
+    {
+        "name": "Cooper",
+        "age": 3,
+        "category": "dog",
+        "image": "/photo/dog 7.jpg",
+        "description": "Very social and enjoys being around other pets."
+    },
+    {
+        "name": "Tinkerbell",
+        "age": 1,
+        "category": "cat",
+        "image": "/photo/cat7.jpg",
+        "description": "A small kitten with a big personality."
+    },
+    {
+        "name": "Duke",
+        "age": 7,
+        "category": "dog",
+        "image": "/photo/dog 8.jpg",
+        "description": "A senior dog with a calm and gentle nature."
+    },
+    {
+        "name": "Fluffy",
+        "age": 2,
+        "category": "cat",
+        "image": "/photo/cat8.jpg",
+        "description": "A fluffy cat who loves napping in the sun."
+    },
+    {
+        "name": "Penny",
+        "age": 3,
+        "category": "dog",
+        "image": "/photo/dog 9.jpg",
+        "description": "Energetic and playful, loves to be around children."
+    },
+    {
+        "name": "Oliver",
+        "age": 5,
+        "category": "cat",
+        "image": "/photo/cat9.jpg",
+        "description": "A friendly and calm cat, enjoys being the center of attention."
+    },
+    {
+        "name": "Rocky",
+        "age": 4,
+        "category": "dog",
+        "image": "/photo/dog 10.jpg",
+        "description": "A strong dog who needs a lot of space to run."
+    }
+]

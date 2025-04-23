@@ -1,0 +1,290 @@
+html {
+    font-size: 10px;
+}
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: lightgray;
+    --color-white: #fff;
+    --color-gray: rgb(105, 104, 104);
+    --color-highlight: #ff6b6b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lora", serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.nav {
+    padding: 20px;
+    width: 100%;
+    background-color: var(--color-white);
+    height: 8rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    max-width: 100%;
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    margin: 0 0.7rem;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-gray);
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.primary-btn {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    padding: 1rem 1.5rem;
+    color: var(--color-white);
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: var(--color-gray);
+}
+
+/* Footer Styles */
+.footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+/* Navbar Active Link Styles */
+.nav-link.active {
+    color: var(--color-primary);
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-primary);
+    transition: none;
+}
+
+/* Filter Button Styles */
+.filter {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Animal Cards */
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.animal-card {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.animal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.animal-card h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.animal-card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Styling for the Buy Button */
+.buy-btn {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.buy-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Modal Background */
+/* Modal and Form Styling */
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+}
+
+.close-btn {
+    font-size: 1.8rem;
+    color: #555;
+    float: right;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ff6b6b;
+}
+
+#buyForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#buyForm label {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+#buyForm input {
+    padding: 10px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#buyForm button {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buyForm button:hover {
+    background-color: #ff6b6b;
+}
+
+/* Animal Card Styling */
+.animal-card {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.animal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.animal-card h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.animal-card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.buy-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #0056b3;
+}

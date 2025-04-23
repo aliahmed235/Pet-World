@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinics in Egypt</title>
+    <link rel="stylesheet" href="clinic.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/sign-in.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo"><img src="/photo/edit.JPG" alt="Paws & Claws Logo"></a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/home/software_project.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/adoption page/Adoption page.html" class="nav-link">Adoption</a></li>
+                <li class="nav-item"><a href="/clinic/clinic.html" class="nav-link">Clinics</a></li>
+                <li class="nav-item"><a href="/buy and sell/buy.html" class="nav-link">Buy</a></li>
+                <li class="nav-item"><a href="/buy and sell/sell.html" class="nav-link">Sell</a></li>
+                <li class="nav-item"><a href="/Accessories/accessories.html" class="nav-link">Accessories</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="javascript:void(0);" id="signInBtn" class="primary-btn">Sign In &rarr;</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="clinic-section">
+            <h1>Find Clinics Near You</h1>
+            <div class="location-filter">
+                <label for="locationSelect">Choose a Location:</label>
+                <select id="locationSelect">
+                    <option value="" disabled selected>Select a location</option>
+                    <option value="cairo">Cairo</option>
+                    <option value="alexandria">Alexandria</option>
+                    <option value="giza">Giza</option>
+                    <option value="sharm">Sharm El Sheikh</option>
+                </select>
+            </div>
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+            <div class="clinic-list">
+                <h2>Clinics:</h2>
+                <ul id="clinicNames"></ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pets Word. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="clinic.js"></script>
+    <script src="/sign-in.js"></script>
+</body>
+</html>

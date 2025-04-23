@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sell.css">
+    <link rel="stylesheet" href="/sign-in.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>buying and selling pets world</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo"><img src="/photo/edit.JPG" alt="Paws & Claws Logo"></a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/home/software_project.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/adoption page/Adoption page.html" class="nav-link">Adoption</a></li>
+                <li class="nav-item"><a href="/clinic/clinic.html" class="nav-link">Clinics</a></li>
+                <li class="nav-item"><a href="/buy and sell/buy.html" class="nav-link">Buy</a></li>
+                <li class="nav-item"><a href="/buy and sell/sell.html" class="nav-link">Sell</a></li>
+                <li class="nav-item"><a href="/Accessories/accessories.html" class="nav-link">Accessories</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="javascript:void(0);" id="signInBtn" class="primary-btn">Sign In &rarr;</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <main>
+             <!-- Sell Section -->
+        <section class="sell-form">
+            <h1>Sell Your Animal</h1>
+            <p>Fill out the form below to list your animal for sale.</p>
+            <form id="sellAnimalForm">
+                <label for="animalName">Animal Name:</label>
+                <input type="text" id="animalName" name="animalName" required>
+
+                <label for="animalAge">Animal Age:</label>
+                <input type="number" id="animalAge" name="animalAge" required>
+
+                <label for="animalCategory">Category:</label>
+                <select id="animalCategory" name="animalCategory" required>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                </select>
+
+                <label for="animalDescription">Description:</label>
+                <textarea id="animalDescription" name="animalDescription" rows="4" required></textarea>
+
+                <label for="animalImage">Upload Image:</label>
+                <input type="file" id="animalImage" name="animalImage" accept="image/*" required>
+
+                <label for="sellerEmail">Email:</label>
+                <input type="email" id="sellerEmail" name="sellerEmail" required>
+
+                <label for="sellerPhone">Phone Number:</label>
+                <input type="tel" id="sellerPhone" name="sellerPhone" required>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pets Word. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="sell.js"></script>
+<script src="/sign-in.js"></script>
+</html>

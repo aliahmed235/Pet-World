@@ -1,0 +1,222 @@
+html {
+    font-size: 10px;
+}
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: lightgray;
+    --color-white: #fff;
+    --color-gray: rgb(105, 104, 104);
+    --color-highlight: #ff6b6b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lora", serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.nav {
+    padding: 20px;
+    width: 100%;
+    background-color: var(--color-white);
+    height: 8rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    max-width: 100%;
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    margin: 0 0.7rem;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-gray);
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Navbar active link styles */
+.nav-link.active {
+    color: var(--color-primary);
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-primary);
+    transition: none;
+}
+
+/* Footer */
+.footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+/* Primary Button */
+.primary-btn {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    padding: 1rem 1.5rem;
+    color: var(--color-white);
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: var(--color-gray);
+}
+
+/* Sell Form Styles */
+.sell-form {
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sell-form h1 {
+    font-size: 2.4rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.sell-form p {
+    font-size: 1.6rem;
+    color: var(--color-gray);
+    margin-bottom: 20px;
+}
+
+.sell-form label {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.sell-form input,
+.sell-form select,
+.sell-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sell-form textarea {
+    resize: vertical;
+}
+
+.sell-form button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sell-form button:hover {
+    background-color: var(--color-highlight);
+}
+
+/* Confirmation Message */
+.confirmation-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInOut 5s ease-in-out forwards;
+}
+
+/* Add an icon to the message */
+.confirmation-message::before {
+    content: "✔";
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Fade In/Out Animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    10%,
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}

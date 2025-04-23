@@ -1,0 +1,187 @@
+:root {
+    --color-primary: black;
+    --color-secondary: #f1f1f1;
+    --color-white: #ffffff;
+    --color-gray: #6c757d;
+    --hover-color: #4e73df;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: "Lora", serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    padding: 0 15px;
+}
+
+/* Navbar */
+.nav {
+    padding: 20px;
+    background-color: var(--color-white);
+    height: 8rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    width: 90px; 
+    height: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-gray);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* This creates the animation effect on hover */
+}
+
+.nav-link.active {
+    color: var(--color-primary); /* Changes the color of the active link */
+    font-weight: bold;
+}
+
+.nav-link.active::after {
+    width: 100%; /* Keeps the underline permanently visible for the active link */
+    height: 2px;
+}
+
+/* Form */
+form {
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--hover-color);
+}
+
+/* Dropdown & Select Styling */
+select.form-control {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 1rem;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+#descriptionContainer {
+    margin-top: 20px;
+    display: none;
+}
+
+textarea#description {
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Footer */
+.footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .form-control {
+        font-size: 1.2rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
